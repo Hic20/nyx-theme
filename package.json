@@ -1,18 +1,25 @@
 {
-  "name": "nyx",
+  "name": "theme-nyx",
   "displayName": "Nyx",
-  "description": "",
   "version": "0.0.1",
+  "description": "A dark theme inspired by the colors of Nyx.",
+  "publisher": "Hic20",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hic20/Nyx.git"
+  },
   "engines": {
     "vscode": "^1.109.0"
   },
   "categories": [
     "Themes"
   ],
+  "icon": "Nyx.jpg",
   "contributes": {
     "themes": [
       {
-        "label": "Nyx",
+        "label": "Nyx Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/Nyx-color-theme.json"
       }
