@@ -5,10 +5,14 @@
 {
 	"name": "Nyx",
 	"colors": {
-		"editor.background": "#582f5f0d",
+		"editor.background": "#121122",
 		"editor.foreground": "#eeffff",
 		"activityBarBadge.background": "#007acc",
-		"sideBarTitle.foreground": "#bbbbbb"
+		"sideBarTitle.foreground": "#bbbbbb",
+    "editorLineNumber.foreground": "#3A3663",
+    "sideBar.background": "#090911",
+    "activityBar.background": "#121122",
+    "activityBar.activeBorder": "#565095"
 	},
 	"tokenColors": [
 		{
@@ -19,7 +23,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#546E7A"
+				"foreground": "#565095"
 			}
 		},
 		{
