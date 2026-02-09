@@ -1,0 +1,44 @@
+$schema: vscode://schemas/color-theme
+name: Nyx
+author: Lars Heule
+maintainers:
+  - Lars Heule <Hic20@pm.me>
+semanticClass: nyx.theme
+semanticHighlighting: true
+nyx:
+  base:
+    - &BG         '#121122'
+    - &FG         ''
+    - &SELECTION  ''
+    - &COMMENT    '#565095'
+    - &CYAN       ''
+    - &GREEN      ''
+    - &ORANGE     ''
+    - &PINK       ''
+    - &PURPLE     ''
+    - &RED        ''
+    - &YELLOW     ''
+  ansi:
+    - &COLOR0 ''
+  other:
+    - &WHITE '#FFFFFF'
+
+# User Interface (Reference: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
+colors:
+  # Editor Colors
+  editor.background: *BG
+  editorLineNumber.foreground: *COMMENT
+  editorCursor.foreground:
+
+# =============================================================================
+# Comments
+# =============================================================================
+
+- name: Comments
+  scope:
+  - comment
+  - punctuation.definition.comment
+  - unused.comment
+  - wildcard.comment
+  settings:
+    foreground: *COMMENT
