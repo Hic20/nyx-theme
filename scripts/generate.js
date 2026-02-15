@@ -30,11 +30,11 @@ const withAlphaType = new Type('!alpha', {
 
 const schema = DEFAULT_SCHEMA.extend([withAlphaType]);
 
-modules.exports = async () => {
-  const yamlFile = await readFile(
-    join(__dirname, '..', 'src', 'nyx.yml'),
-    'utf-8'
-  );
+module.exports = async () => {
+    const yamlFile = await readFile(
+        join(__dirname, '..', 'src', 'nyx.yml'),
+        'utf-8'
+    );
 
   /** @type {Theme} */
   const base = load(yamlFile, { schema });
