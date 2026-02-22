@@ -302,7 +302,7 @@ colors:
 
   # Panel Colors
   panel.background: *BG
-  panel.broder: *PURPLE
+  panel.border: *PURPLE
   panelTitle.activeBorder: *PINK
   panelTitle.activeForeground: *FG
   panelTitle.inactiveForeground: *COMMENT
@@ -323,11 +323,123 @@ colors:
   statusBar.borders:
 
   # Title Bar Colors (MacOS Only)
+  titleBar.activeBackground: *BGDark
+  titleBar.activeForeground: *FG
+  titleBar.inactiveBackground: *BGDarker
+  titleBar.inactiveForeground: *COMMENT
 
-# =============================================================================
-# Comments
-# =============================================================================
+  # Extensions
+  extensionButton.prominentForeground: *FG
+  extensionButton.prominentBackground: !alpha [*GREEN, 90]
+  extensionButton.prominentHoverBackground: !alpha [*GREEN, 60]
+
+  # Quick Picker
+  pickerGroup.border: *PURPLE
+  pickerGroup.foreground: *CYAN
+
+  # Debug
+  debugToolBar.background: *BGDark
+
+  # Welcome Page
+  welcomePage.buttonBackground:
+  welcomePage.buttonHoverBackground:
+  welcomePage.embeddedEditorBackground: *BGDark
+
+  # Setting Editor
+  settings.headerForeground: *FG
+  settings.modifiedItemIndicator: *ORANGE
+  settings.inactiveSelectedItemBorder:
+  settings.dropdownBackgroud: *BGDark
+  settings.dropdownForeground: *FG
+  settings.dropdownBorder: *BGDarker
+  settings.checkboxBackground: *BGDark
+  settings.checkboxForeground: *FG
+  settings.checkboxBorder: *BGDarker
+  settings.textInputBackground: *BGDark
+  settings.textInputForeground: *FG
+  settings.textInputBorder: *BGDarker
+  settings.numberInputBackground: *BGDark
+  settings.numberInputForeground: *FG
+  settings.numberInputBorder: *BGDarker
+
+  # Breadcrumbs
+  breadcrumb.foreground: *COMMENT
+  breadcrumb.background: *BG
+  breadcrumb.focusForeground: *FG
+  breadcrumb.activeSelectionForeground: *FG
+  breadcrumbPicker.background: *BGDarker
+
+  # Misc
+  menu.seperatorBackground:
+  listFilterWidget.background: *BGLight
+  listFilterWidget.outline: *BGLighter
+  listFilterWidget.noMatchesOutline: *RED
+
+# Syntaxes
 tokenColors:
+
+# ==============================================================================
+# General
+# ==============================================================================
+
+  - scope:
+    - emphasis
+    settings:
+      fontStyle: italic
+  - scope:
+    - strong
+    settings:
+      fontStyle: bold
+  - scope:
+    - header
+    settings:
+      foreground: *PURPLE
+
+  # Diffs
+  # =====
+  - scope:
+    - meta.diff
+    - meta.diff.header
+    settings:
+      foreground: *COMMENT
+  - scope:
+    - markup.inserted
+    settings:
+      foreground: *GREEN
+  - scope:
+    - markup.deleted
+    settings:
+      foreground: *RED
+  - scope:
+    - markup.changed
+    settings:
+      foreground: *ORANGE
+  - scope:
+    - invalid
+    settings:
+      foreground: *RED
+      fontStyle: underline italic
+  - scope:
+    - invalid.deprecated
+    settings:
+      foreground: *FG
+      fontStyle: underline italic
+  - scope:
+    - entity.name.filename
+    settings:
+      foreground: *YELLOW
+  - scope:
+    - markup.error
+    settings:
+      foreground: *RED
+
+  # Markdown / RST / Prose
+  # ======================
+
+# ==============================================================================
+# Comments
+# ==============================================================================
+
   - name: Comments
     scope:
     - comment
