@@ -5,3 +5,6 @@ node_modules
 /themes/
 /tests/
 bin/
+
+# Palette
+Palettes.md
