@@ -8,16 +8,16 @@ semanticHighlighting: true
 nyx:
   base:
     - &BG         '#121122'
-    - &FG         '#F8F8F2' # nc
-    - &SELECTION  '#44475A' # nc
-    - &COMMENT    '#565095'
-    - &CYAN       '#8BE9FD' # nc
-    - &GREEN      '#50FA7B' # nc
-    - &ORANGE     '#FFB86C' # nc
-    - &PINK       '#FF79C6' # nc
-    - &PURPLE     '#BD93F9' # nc
-    - &RED        '#FF5555' # nc
-    - &YELLOW     '#F1FA8C' # nc
+    - &FG         '#F8F8F2'
+    - &SELECTION  '#2A2950'
+    - &COMMENT    '#6C63B5'
+    - &CYAN       '#3AE3FF'
+    - &GREEN      '#5CFFB2'
+    - &ORANGE     '#FF9E64'
+    - &PINK       '#FF6EC7'
+    - &PURPLE     '#7B5CFF'
+    - &RED        '#FF5A5F'
+    - &YELLOW     '#F9FF8F'
   ansi:
     - &COLOR0     '#21222C' # nc
     - &COLOR1     '#FF5555' # nc
